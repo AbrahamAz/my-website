@@ -15,7 +15,7 @@ body {
 
 /* logo styling */
 .logo img{
-    position: absolute;
+    position: fixed;
     width: 100px;
     height: 100px;
 }
@@ -97,3 +97,30 @@ body {
 span.static {
     color: #ff9601;
 }
+
+
+/* Particle Movement Canvas */
+
+#particleMov{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    z-index: -10;
+}
+
+.ball {
+    pointer-events: none;
+    position: absolute; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    background: #ff9601;
+    animation: implode 1s ease-in-out;
+    animation-fill-mode: both;
+    opacity: .5;
+  }
+  
+  @keyframes implode {
+    100% {transform: scale(0)}
+  }
