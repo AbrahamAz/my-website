@@ -1,1 +1,99 @@
+/* background-color: #ff9601; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,500;1,700&display=swap');
 
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+/* logo styling */
+.logo img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+/* navbar styling */
+
+.nav-bar{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+
+
+/* starting Paragraph Animation */
+
+.startParaAni{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.startParaAni span{
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 50px;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+
+.startParaAni span.animation:hover{
+    color: #ff9601;
+    animation-name: rubberband;
+}
+
+@keyframes rubberband {
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+    
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+    
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+    
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+    
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+    
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+}
+
+.secondLine{
+    position: absolute;
+    top: 260px;
+    left: 200px;
+}
+.thirdLine{
+    position: absolute;
+    top: 320px;
+    left: 200px;
+}
+
+span.static {
+    color: #ff9601;
+}
