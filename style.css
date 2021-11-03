@@ -13,11 +13,21 @@ body {
   position: relative;
 }
 
-/* logo styling */
+/* small logo styling */
 .logo img {
   position: fixed;
   width: 100px;
   height: 100px;
+}
+
+/* Big logo styling */
+
+.movingZone {
+  position: absolute;
+  right: 60px;
+  top: 100px;
+  transform: rotate(-20deg);
+  z-index: -11;
 }
 
 /* navbar styling */
@@ -96,4 +106,3 @@ body {
 span.static {
   color: #ff9601;
 }
-
