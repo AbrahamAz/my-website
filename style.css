@@ -7,15 +7,20 @@ body {
   padding: 0;
   background: #000000;
   color: white;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
   max-width: 100%;
   position: relative;
+  font-family: "Ubuntu";
 }
-
+header {
+  position: relative;
+  height: 700px;
+  width: 100vw;
+}
 /* small logo styling */
 .logo img {
-  position: fixed;
+  position: absolute;
   width: 100px;
   height: 100px;
 }
@@ -105,4 +110,53 @@ body {
 
 span.static {
   color: #ff9601;
+}
+
+/* Mouse styling */
+
+.mouse {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: calc(50% - 15px);
+}
+
+.mouseBorder {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  border: 2px solid #ff9601;
+  border-radius: 10px;
+}
+
+.mouseScroll {
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  background-color: #ff9601;
+  top: 10px;
+  left: 16px;
+}
+
+#scrollDown {
+  opacity: 0.8;
+  transition: 0.3s opacity;
+}
+
+#scrollDown p {
+  position: absolute;
+  color: #ff9601;
+  margin-top: 565px;
+  margin-left: calc(50% - 40px);
+}
+
+#scrollDown:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+.a {
+  width: 100px;
+  height: 1000px;
+  background-color: aliceblue;
+  z-index: 100;
 }
