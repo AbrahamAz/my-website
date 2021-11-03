@@ -45,10 +45,11 @@ header {
 
 /* starting Paragraph Animation */
 
-.startParaAni {
+#startingAni .paraAni {
   position: absolute;
   top: 200px;
   left: 200px;
+  margin-right: 10px;
 }
 
 .startParaAni span {
@@ -99,13 +100,11 @@ header {
 
 .secondLine {
   position: absolute;
-  top: 260px;
-  left: 200px;
+  top: 60px;
 }
 .thirdLine {
   position: absolute;
-  top: 320px;
-  left: 200px;
+  top: 120px;
 }
 
 span.static {
@@ -152,11 +151,4 @@ span.static {
 #scrollDown:hover {
   opacity: 1;
   cursor: default;
-}
-
-.a {
-  width: 100px;
-  height: 1000px;
-  background-color: aliceblue;
-  z-index: 100;
 }

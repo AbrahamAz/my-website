@@ -8,3 +8,9 @@ $(document).ready(function () {
     );
   });
 });
+
+/**
+ * Idea for including a game in the html that move a ball
+ * Down blocks, and every here and there it reachs a step were
+ * it tell a section of my website
+ */
